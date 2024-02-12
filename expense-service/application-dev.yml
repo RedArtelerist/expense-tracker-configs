@@ -3,5 +3,3 @@ spring:
     url: jdbc:postgresql://localhost:5432/expense-tracker-db
     username: root
     password: 6110
-  jpa:
-    generate-ddl: true
