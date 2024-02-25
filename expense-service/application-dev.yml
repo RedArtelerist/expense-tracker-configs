@@ -18,7 +18,7 @@ spring:
 
 jwt:
   secret:
-    access: ${JWT_ACCESS_KEY:qBTmv4oXFFR2kalfjl)AFK6fsIUIUhhXqlktXjXdkcyygs8nPVEwMfo29VDRRepYDVV5IkIxBMzr7OEHXEHd37w==}
+    access: ${JWT_ACCESS_KEY:qBTmv4oXFFR2kalfjl1AFK6fsIUIUhhXqlktXjXdkcyygs8nPVEwMfo29VDRRepYDVV5IkIxBMzr7OEHXEHd37w==}
     refresh: ${JWT_REFRESH_KEY:zL1HB3Pch05AvfyaAKLFALLgakl39NCWKJUjEp27s9J2jEG3ifiKCGylaZ8fDeoONSTJP/wAzKawB8F9rOMNg==}
   token:
     lifetime-in-hours: 24
