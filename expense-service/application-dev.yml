@@ -1,5 +1,30 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/expense-tracker-db
-    username: root
-    password: 6110
+    url: jdbc:postgresql://${EXPENSE_DB_HOST:localhost}:${EXPENSE_DB_PORT:5433}/expense-tracker-db
+    username: ${EXPENSE_DB_USER:postgres}
+    password: ${EXPENSE_DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    open-in-view: false
+
+  thymeleaf:
+    enabled: true
+    prefix: classpath:/templates/
+    suffix: .html
+
+jwt:
+  secret:
+    access: ${JWT_ACCESS_KEY:qBTmv4oXFFR2kalfjl#)AFK6fsIUIUhhXqlktXjXdkcyygs8nPVEwMfo29VDRRepYDVV5IkIxBMzr7OEHXEHd37w==}
+    refresh: ${JWT_REFRESH_KEY:zL1HB3Pch05AvfyaAKLFALLgakl39#NCWKJUjEp27s9J2jEG3ifiKCGylaZ8fDeoONSTJP/wAzKawB8F9rOMNg==}
+  token:
+    lifetime-in-hours: 24
+    lifetime-in-days: 30
+
+telegram:
+  bot:
+    token: ${TELEGRAM_BOT_TOKEN}
+    name: ${TELEGRAM_BOT_NAME}
