@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://${EXPENSE_DB_HOST:localhost}:${EXPENSE_DB_PORT:5433}/${EXPENSE_DB:expense-tracker-db}
+    url: jdbc:postgresql://${EXPENSE_DB_HOST:localhost}:${EXPENSE_DB_PORT:5433}/expense-tracker-db
     username: ${EXPENSE_DB_USER:postgres}
     password: ${EXPENSE_DB_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
