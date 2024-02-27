@@ -1,4 +1,4 @@
 telegram:
   bot:
-    name: some name
-    token: some token
+    token: ${TELEGRAM_BOT_TOKEN}
+    name: ${TELEGRAM_BOT_NAME}
