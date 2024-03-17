@@ -31,5 +31,5 @@ endpoints:
 info:
   app:
     name: "telegram-bot-service"
-    description: "Expese Tracker Telegram Bot Application"
+    description: "Expese Tracker Telegram Bot application"
     version: "1.0.0"
