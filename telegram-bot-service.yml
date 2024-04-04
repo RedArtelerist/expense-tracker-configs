@@ -29,8 +29,29 @@ info:
     description: "Expense Tracker Telegram Bot Application"
     version: "1.0.0"
 
-telegram:
-  bot:
-    token: ${TELEGRAM_BOT_TOKEN}
-    name: ${TELEGRAM_BOT_NAME}
+spring:
+  datasource:
+    url: jdbc:postgresql://${TELEGRAM_DB_HOST:localhost}:${TELEGRAM_DB_PORT:5432}/${TELEGRAM_DB:telegram-bot-db}
+    username: ${TELEGRAM_DB_USER:postgres}
+    password: ${TELEGRAM_DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
 
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    open-in-view: false
+
+bot:
+  name: ${TELEGRAM_BOT_NAME}
+  token: ${TELEGRAM_BOT_TOKEN}
+  api:
+    url: https://api.telegram.org
+  voice:
+    max_length: 10
+
+max-mailing-messages:
+  maxMessagesOfAnnouncePerSecond: 25
+
+authorization-header:
+  header-value: ${INTERNAL_KEY_HEADER:X-INTERNAL-KEY}
