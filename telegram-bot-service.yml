@@ -45,3 +45,17 @@ spring:
   liquibase:
     enabled: true
     change-log: /db/changelog/db.changelog-master.yaml
+
+bot:
+  name: ${TELEGRAM_BOT_NAME}
+  token: ${TELEGRAM_BOT_TOKEN}
+  api:
+    url: https://api.telegram.org
+  voice:
+    max_length: 10
+
+max-mailing-messages:
+  maxMessagesOfAnnouncePerSecond: 25
+
+authorization-header:
+  header-value: ${INTERNAL_KEY_HEADER:X-INTERNAL-KEY}
