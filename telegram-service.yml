@@ -1,0 +1,5 @@
+info:
+  app:
+    name: "telegram-bot-service"
+    description: "Expense Tracker Telegram Bot Application"
+    version: "1.0.0"
