@@ -23,12 +23,6 @@ endpoints:
   shutdown:
     enabled: true
 
-info:
-  app:
-    name: "telegram-bot-service"
-    description: "Expense Tracker Telegram Bot Application"
-    version: "1.0.0"
-
 spring:
   datasource:
     url: jdbc:postgresql://${TELEGRAM_DB_HOST:localhost}:${TELEGRAM_DB_PORT:5432}/${TELEGRAM_DB:telegram-bot-db}
