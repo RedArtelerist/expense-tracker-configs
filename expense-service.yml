@@ -23,18 +23,17 @@ endpoints:
   shutdown:
     enabled: true
 
-info:
-  app:
-    name: "expense-service"
-    description: "Expese Tracker Main Service Application"
-    version: "1.0.0"
-
 spring:
   datasource:
     url: jdbc:postgresql://${EXPENSE_DB_HOST:localhost}:${EXPENSE_DB_PORT:5432}/${EXPENSE_DB:expense-tracker-db}
     username: ${EXPENSE_DB_USER:postgres}
     password: ${EXPENSE_DB_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
+  
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
 
   jpa:
     hibernate:
@@ -63,3 +62,33 @@ telegram:
   bot:
     token: ${TELEGRAM_BOT_TOKEN}
     name: ${TELEGRAM_BOT_NAME}
+
+filters:
+  authorization-header:
+    header-value: ${INTERNAL_KEY_HEADER:X-INTERNAL-KEY}
+
+default-category:
+  categories:
+    -
+      name: Salary
+      type: INCOME
+    -
+      name: Grocery
+      type: EXPENSE
+    -
+      name: Transport
+      type: EXPENSE
+    -
+      name: Apartments
+      type: EXPENSE
+
+recent-activity:
+  activityDays: 30
+
+admin:
+  allowed_users:
+    RedArt02, admin
+
+long-polling:
+  tracker:
+    period-of-inactivity: 10_000
