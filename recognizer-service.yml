@@ -22,3 +22,15 @@ management:
 endpoints:
   shutdown:
     enabled: true
+
+wit-ai:
+  url: https://api.wit.ai/speech
+  token: ${WIT_AI_TOKEN:wit-ai-token}
+  version: 20230215
+  charset: UTF-8
+  method: POST
+  authProperty: Authorization
+  contentTypeProperty: Content-Type
+  contentTypeValue: audio/wav
+  paramSeparator: "?"
+  versionParam: v=%s
