@@ -30,4 +30,4 @@ wit-ai:
 
 open-ai:
   token: ${OPEN_AI_TOKEN:open-ai-token}
-  model: ${OPEN_AI_VOICE_MODEL}
+  model: ${OPEN_AI_VOICE_MODEL:whisper-1}
