@@ -35,3 +35,6 @@ open-ai:
 deepgram:
   token: ${DEEPGRAM_TOKEN:deepgram-token}
   model: ${DEEPGRAM_MODEL:nova-2}
+
+assembly-ai:
+  token: ${ASSEMBLY_AI_TOKEN:deepgram-token}
