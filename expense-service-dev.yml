@@ -7,20 +7,20 @@ spring:
 default-category:
   categories:
     -
-      name: Salary
+      name: Зарплата
       type: INCOME
     -
-      name: Grocery
+      name: Продукти
       type: EXPENSE
     -
-      name: Transport
+      name: Транспорт
       type: EXPENSE
     -
-      name: Apartments
+      name: Комунальні
       type: EXPENSE
     -
-      name: Clothes
+      name: Одяг
       type: EXPENSE
     -
-      name: Entertainment
+      name: Розваги
       type: EXPENSE
