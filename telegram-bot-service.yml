@@ -46,7 +46,7 @@ bot:
   api:
     url: https://api.telegram.org
   voice:
-    max_length: 10
+    max_length: 15
 
 max-mailing-messages:
   maxMessagesOfAnnouncePerSecond: 25
