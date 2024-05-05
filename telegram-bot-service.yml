@@ -24,21 +24,9 @@ endpoints:
     enabled: true
 
 spring:
-  datasource:
-    url: jdbc:postgresql://${TELEGRAM_DB_HOST:localhost}:${TELEGRAM_DB_PORT:5432}/${TELEGRAM_DB:telegram-bot-db}
-    username: ${TELEGRAM_DB_USER:postgres}
-    password: ${TELEGRAM_DB_PASSWORD:postgres}
-    driver-class-name: org.postgresql.Driver
-
-  jpa:
-    hibernate:
-      ddl-auto: validate
-    show-sql: true
-    open-in-view: false
-
-  liquibase:
-    enabled: true
-    change-log: /db/changelog/db.changelog-master.yaml
+  data:
+    mongodb:
+      uri: mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@telegram-bot-mongodb:27017/${MONGODB_DATABASE:telegram-bot-db}?authSource=admin
 
 bot:
   name: ${TELEGRAM_BOT_NAME}
