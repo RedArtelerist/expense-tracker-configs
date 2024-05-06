@@ -27,6 +27,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@localhost:${MONGODB_PORT:27017}/${MONGODB_DATABASE:telegram-bot-db}
+      authentication-database: admin
 
 bot:
   name: ${TELEGRAM_BOT_NAME}
