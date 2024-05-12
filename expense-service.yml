@@ -70,16 +70,16 @@ filters:
 default-category:
   categories:
     -
-      name: Salary
+      name: Зарплата
       type: INCOME
     -
-      name: Grocery
+      name: Продукти
       type: EXPENSE
     -
-      name: Transport
+      name: Транспорт
       type: EXPENSE
     -
-      name: Apartments
+      name: Комунальні послуги
       type: EXPENSE
 
 recent-activity:
