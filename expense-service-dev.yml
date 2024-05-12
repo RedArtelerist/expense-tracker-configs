@@ -13,13 +13,19 @@ default-category:
       name: Продукти
       type: EXPENSE
     -
+      name: Кафе/ресторани
+      type: EXPENSE
+    -
       name: Транспорт
       type: EXPENSE
     -
-      name: Комунальні
+      name: Комунальні послуги
       type: EXPENSE
     -
       name: Одяг
+      type: EXPENSE
+    -
+      name: Техніка
       type: EXPENSE
     -
       name: Розваги
