@@ -21,7 +21,7 @@ bot:
     max_length: 15
 
 max-mailing-messages:
-  maxMessagesOfAnnouncePerSecond: 25
+  maxMessagesOfAnnouncePerSecond: 15
 
 authorization-header:
   header-value: ${INTERNAL_KEY_HEADER:X-INTERNAL-KEY}
