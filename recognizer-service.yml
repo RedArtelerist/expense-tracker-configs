@@ -17,3 +17,6 @@ deepgram:
 
 assembly-ai:
   token: ${ASSEMBLY_AI_TOKEN:deepgram-token}
+
+authorization-header:
+  header-value: ${INTERNAL_KEY_HEADER:X-INTERNAL-KEY}
