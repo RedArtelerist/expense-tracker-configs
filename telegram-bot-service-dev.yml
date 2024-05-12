@@ -1,5 +1,6 @@
-spring:
-  datasource:
-    hikari:
-      maximum-pool-size: 10
-      minimum-idle: 0
+bot:
+  voice:
+    max_length: 20
+
+max-mailing-messages:
+  maxMessagesOfAnnouncePerSecond: 25
