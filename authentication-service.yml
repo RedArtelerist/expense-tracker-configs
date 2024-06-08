@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+
+spring:
+  thymeleaf:
+    enabled: true
+    prefix: classpath:/templates/
+    suffix: .html
+
+jwt:
+  secret:
+    access: ${JWT_ACCESS_KEY}
+    refresh: ${JWT_REFRESH_KEY}
+  token:
+    lifetime-in-hours: 24
+    lifetime-in-days: 30
+
+filters:
+  authorization-header:
+    header-value: ${INTERNAL_KEY_HEADER:X-INTERNAL-KEY}
