@@ -6,3 +6,7 @@ eureka:
     fetch-registry: true
   instance:
     prefer-ip-address: true
+
+jwt:
+  secret:
+    access: ${JWT_ACCESS_KEY}
