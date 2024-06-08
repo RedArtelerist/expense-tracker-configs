@@ -16,7 +16,6 @@ spring:
 jwt:
   secret:
     access: ${JWT_ACCESS_KEY}
-    refresh: ${JWT_REFRESH_KEY}
   token:
     lifetime-in-hours: 24
     lifetime-in-days: 30
