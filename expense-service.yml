@@ -37,9 +37,6 @@ spring:
 jwt:
   secret:
     access: ${JWT_ACCESS_KEY}
-  token:
-    lifetime-in-hours: 24
-    lifetime-in-days: 30
 
 telegram:
   bot:
