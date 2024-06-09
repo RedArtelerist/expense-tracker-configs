@@ -10,3 +10,9 @@ eureka:
 jwt:
   secret:
     access: ${JWT_ACCESS_KEY}
+
+spring:
+  thymeleaf:
+    enabled: true
+    prefix: classpath:/templates/
+    suffix: .html
