@@ -16,3 +16,6 @@ spring:
     enabled: true
     prefix: classpath:/templates/
     suffix: .html
+
+bot:
+  name: ${TELEGRAM_BOT_NAME}
