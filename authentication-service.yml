@@ -14,6 +14,5 @@ jwt:
     lifetime-in-hours: 24
     lifetime-in-days: 30
 
-filters:
-  authorization-header:
-    header-value: ${INTERNAL_KEY_HEADER:X-INTERNAL-KEY}
+authorization-header:
+  header-value: ${INTERNAL_KEY_HEADER:X-INTERNAL-KEY}
