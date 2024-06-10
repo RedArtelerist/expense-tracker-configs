@@ -10,12 +10,13 @@ eureka:
 jwt:
   secret:
     access: ${JWT_ACCESS_KEY}
+    
+telegram:
+  bot:
+    token: ${TELEGRAM_BOT_TOKEN}
 
 spring:
   thymeleaf:
     enabled: true
     prefix: classpath:/templates/
     suffix: .html
-
-bot:
-  name: ${TELEGRAM_BOT_NAME}
