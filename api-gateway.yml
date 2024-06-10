@@ -11,9 +11,8 @@ jwt:
   secret:
     access: ${JWT_ACCESS_KEY}
     
-telegram:
-  bot:
-    token: ${TELEGRAM_BOT_TOKEN}
+bot:
+  name: ${TELEGRAM_BOT_NAME}
 
 spring:
   thymeleaf:
