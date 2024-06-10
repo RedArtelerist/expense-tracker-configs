@@ -14,5 +14,9 @@ jwt:
     lifetime-in-hours: 24
     lifetime-in-days: 30
 
+telegram:
+  bot:
+    token: ${TELEGRAM_BOT_TOKEN}
+
 authorization-header:
   header-value: ${INTERNAL_KEY_HEADER:X-INTERNAL-KEY}
