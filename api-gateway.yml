@@ -13,9 +13,3 @@ jwt:
     
 bot:
   name: ${TELEGRAM_BOT_NAME}
-
-spring:
-  thymeleaf:
-    enabled: true
-    prefix: classpath:/templates/
-    suffix: .html
