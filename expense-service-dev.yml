@@ -4,6 +4,9 @@ spring:
       maximum-pool-size: 10
       minimum-idle: 0
 
+jpa:
+  show-sql: true
+
 default-category:
   categories:
     -
